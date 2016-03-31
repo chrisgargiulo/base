@@ -14,45 +14,46 @@ body {
 
 /* MEDIA QUERIES */
 
-/* Medium devices (tablets, 48em and up) */
+/* Medium devices (tablets and up) */
 @media screen and (min-width: $breakpoint-medium) { 
 
     body {
         font-size: $base-fontsize-medium;
+        background: rgba(0,0,255,.1);
     }
 
     .container {
-        padding: 0 6%; 
-        margin: $base-line-height 4%; 
-        width: 80%;
     }
 }
 
-/* Large devices (desktops, 62em and up) */
+/* Large devices (desktops and up) */
 @media screen and (min-width: $breakpoint-large) { 
 
     body {
         font-size: $base-fontsize-large;
+        background: rgba(0,255,0,.1);
     }
     
     .container {
-        padding: 0 3em; 
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: $base-line-height * 2;
+        padding-right: $base-line-height * 2;
         margin: $base-line-height auto; 
-        width: 52em; 
+        width: $breakpoint-large - (4 * $base-line-height) - 3em; 
     }
 }
 
-/* Extra large devices (large desktops, 75em and up) */
+/* Extra large devices (large desktops and up) */
 @media screen and (min-width: $breakpoint-extralarge) {   
 
     body {
         font-size: $base-fontsize-extralarge;
+        background: rgba(255,0,0,.1);
     }
     
     .container {
-        padding: 0 3em; 
-        margin: $base-line-height auto; 
-        width: 65em; 
+        width: $breakpoint-extralarge - (4 * $base-line-height); 
     }
 
 }
