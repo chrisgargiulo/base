@@ -1,0 +1,25 @@
+// Base Typography
+$body-background-color: #fff;
+//$base-font-family: Georgia, Times, "Times New Roman", serif;
+$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-color: #333;
+$base-fontsize-small: 87.5%; /* 14px */ 
+//$base-fontsize-medium: 93.75%; /* 15px */ 
+$base-fontsize-medium: 87.5%; /* 14px */ 
+$base-fontsize-large: 100%; /* 16px */ 
+$base-fontsize-extralarge: 112.5%; /* 18px */
+$base-line-height: 1.5em;
+
+/*
+$base-font-size: 100%;
+$base-font-weight: normal;
+$base-line-height: 1.5;
+$base-font-color: $color-main;
+$color-main: $color-grey40;
+*/
+
+// Base Responsive Breakpoints
+$breakpoint-small: 34em;
+$breakpoint-medium: 48em;
+$breakpoint-large: 62em;
+$breakpoint-extralarge: 75em;

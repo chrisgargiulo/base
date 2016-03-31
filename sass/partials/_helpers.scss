@@ -1,0 +1,6 @@
+/* CLEARFIX from Chris Coyier at CSS-TRICKS.com */
+.group:after {
+    content: "";
+    clear: both;
+    display: table;
+}

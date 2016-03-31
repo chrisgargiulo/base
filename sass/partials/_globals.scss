@@ -1,0 +1,58 @@
+body {
+    background: $body-background-color;
+    font-family: $base-font-family;
+    font-size: $base-fontsize-small;
+    line-height: $base-line-height;
+    color: $base-font-color;
+}
+
+.container {
+    padding: 0 5%; 
+    margin: $base-line-height 3%; 
+    width: 84%;
+}
+
+/* MEDIA QUERIES */
+
+/* Medium devices (tablets, 48em and up) */
+@media screen and (min-width: $breakpoint-medium) { 
+
+    body {
+        font-size: $base-fontsize-medium;
+    }
+
+    .container {
+        padding: 0 6%; 
+        margin: $base-line-height 4%; 
+        width: 80%;
+    }
+}
+
+/* Large devices (desktops, 62em and up) */
+@media screen and (min-width: $breakpoint-large) { 
+
+    body {
+        font-size: $base-fontsize-large;
+    }
+    
+    .container {
+        padding: 0 3em; 
+        margin: $base-line-height auto; 
+        width: 52em; 
+    }
+}
+
+/* Extra large devices (large desktops, 75em and up) */
+@media screen and (min-width: $breakpoint-extralarge) {   
+
+    body {
+        font-size: $base-fontsize-extralarge;
+    }
+    
+    .container {
+        padding: 0 3em; 
+        margin: $base-line-height auto; 
+        width: 65em; 
+    }
+
+}

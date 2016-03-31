@@ -1,0 +1,305 @@
+@charset "UTF-8";
+/* -------------------- */
+/* BASE CSS */
+/* -------------------- */
+/* TABLE OF CONTENTS
+    1. BASE MODULES
+        - VARIABLES
+        - COLORS
+    2. BASE PARTIALS
+        - RESET
+        - HTML5
+        - GLOBALS
+        - BASE TYPOGRAPHY
+            - HEADINGS
+            - PARAGRAPHS
+            - LINKS
+            - LISTS
+        - MEDIA
+            - IMAGES
+        - HELPERS
+    3. BASE SITE SPECIFIC CSS
+        - LAYOUT
+        - MEDIA QUERIES
+        - @FONTFACE
+        - SECTIONS
+        - NAVIGATION
+*/
+/* -------------------- */
+/* 14px */
+/* 14px */
+/* 16px */
+/* 18px */
+/*
+$base-font-size: 100%;
+$base-font-weight: normal;
+$base-line-height: 1.5;
+$base-font-color: $color-main;
+$color-main: $color-grey40;
+*/
+/* RESET */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, code, a, em, img, strong, ol, ul, li, form, label,
+table, tr, td, article, aside, footer, header, menu, nav, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+
+/* HTML5 */
+header, nav, footer, section, article, aside {
+  display: block;
+}
+
+body {
+  background: #fff;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 87.5%;
+  line-height: 1.5em;
+  color: #333;
+}
+
+.container {
+  padding: 0 5%;
+  margin: 1.5em 3%;
+  width: 84%;
+}
+
+/* MEDIA QUERIES */
+/* Medium devices (tablets, 48em and up) */
+@media screen and (min-width: 48em) {
+  body {
+    font-size: 87.5%;
+  }
+  .container {
+    padding: 0 6%;
+    margin: 1.5em 4%;
+    width: 80%;
+  }
+}
+
+/* Large devices (desktops, 62em and up) */
+@media screen and (min-width: 62em) {
+  body {
+    font-size: 100%;
+  }
+  .container {
+    padding: 0 3em;
+    margin: 1.5em auto;
+    width: 52em;
+  }
+}
+
+/* Extra large devices (large desktops, 75em and up) */
+@media screen and (min-width: 75em) {
+  body {
+    font-size: 112.5%;
+  }
+  .container {
+    padding: 0 3em;
+    margin: 1.5em auto;
+    width: 65em;
+  }
+}
+
+body {
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* HEADINGS
+Traditional scale: 6, 7, 8, 9, 10, 11, 12, 14, 16, 18, 21, 24, 36, 48, 60, 72
+	if base is 16:
+	h1 = 48 pixels → 48 ÷ 16 = 3 em
+	h2 = 36 pixels → 36 ÷ 16 = 2.25 em
+	h3 = 24 pixels → 24 ÷ 16 = 1.5 em
+	h4 = 21 pixels → 21 ÷ 16 = 1.3125 em
+	h5 = 18 pixels → 18 ÷ 16 = 1.125 em
+	h6 = 16 pixels → 16 ÷ 16 = 1 em
+
+================================================== */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  font-weight: inherit;
+}
+
+/* BASELINE VERSION */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+h1 {
+  margin-top: 0;
+  padding-top: 1em;
+  font-size: 3em;
+  /* 48px / 16px = 3em */
+  line-height: 1em;
+  margin-bottom: .5em;
+}
+
+h1.baseline-shift {
+  margin-top: -1em;
+  position: relative;
+  top: .5em;
+  margin-bottom: 1.5em;
+}
+
+h1:first-child {
+  padding-top: 0;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 2.25em;
+  /* 36px / 16px = 2.25em */
+  line-height: 1.333333333333334em;
+  margin-bottom: .5em;
+  padding-top: .00666666666667em;
+  padding-bottom: .16em;
+  margin-top: 0;
+  padding-top: .16666666666667em;
+  font-size: 2.25em;
+  /* 36px / 16px = 2.25em */
+  line-height: 1.333333333333334em;
+  padding-bottom: 0.066666666666667em;
+  position: relative;
+  top: .066666666666667em;
+}
+
+h1 + h2 {
+  padding-top: .00666666666667em;
+  padding-bottom: .16em;
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 1.5em;
+  /* 24px / 16px = 1.5em */
+  line-height: 1em;
+  margin-bottom: 1em;
+}
+
+h4 {
+  margin-top: 0;
+  font-size: 1.3125em;
+  /* 21px / 16px = 1.3125em */
+  line-height: 1.14285714285714em;
+  margin-bottom: 1.14285714285714em;
+}
+
+h5 {
+  margin-top: 0;
+  font-size: 1.125em;
+  /* 18px / 16px = 1.125em */
+  line-height: 1.333333333333334em;
+  margin-bottom: 1.333333333333334em;
+}
+
+h6 {
+  margin-top: 0;
+  font-size: 1em;
+  /* 16px / 16px = 1em */
+  line-height: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:last-child, p:last-child {
+  margin-bottom: 0;
+}
+
+/* PARAGRAPHS
+================================================== */
+p {
+  margin-bottom: 1.5em;
+}
+
+/* LINKS
+================================================== */
+a {
+  color: blue;
+}
+
+a:hover {
+  color: green;
+}
+
+a:visited {
+  color: purple;
+}
+
+a:focus {
+  color: red;
+}
+
+/* LISTS
+================================================== */
+li {
+  margin-left: 1.875em;
+  /* 30px/16px = 1.875em */
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+/* MEDIA QUERIES
+================================================== */
+/* Medium devices (tablets, 48em and up) */
+@media screen and (min-width: 48em) {
+  body {
+    font-size: 87.5%;
+  }
+}
+
+/* Large devices (desktops, 62em and up) */
+@media screen and (min-width: 62em) {
+  body {
+    font-size: 100%;
+  }
+}
+
+/* Extra large devices (large desktops, 75em and up) */
+@media screen and (min-width: 75em) {
+  body {
+    font-size: 112.5%;
+  }
+}
+
+/* IMAGES */
+img,
+img.scale-with-grid {
+  max-width: 100%;
+  height: auto;
+}
+
+/* CLEARFIX from Chris Coyier at CSS-TRICKS.com */
+.group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* #Sections
+================================================== */
+header h1 {
+  padding-top: 0;
+}
+
+section {
+  padding: 1.5em 0;
+}
+
+.baselines-on {
+  background-image: -webkit-linear-gradient(top, #0ff 0, rgba(255, 255, 255, 0) 1px);
+  background-image: linear-gradient(to bottom, #0ff 0, rgba(255, 255, 255, 0) 1px);
+  background-repeat: repeat-y;
+  background-size: 100% 1.5em;
+}
+
+/* MEDIA QUERIES */
+/* Medium devices (tablets, 48em and up) */
+/* Large devices (desktops, 62em and up) */
+/* Extra large devices (large desktops, 75em and up) */

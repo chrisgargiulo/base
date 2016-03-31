@@ -1,0 +1,45 @@
+// Base
+@import "base";
+
+// Site Specific CSS 
+
+//Variable Overrides
+
+body {
+    //background: #ccc; 
+}
+
+//Global Overrides
+
+ 
+//Dev Testing
+.baselines-on {
+    
+    //.container {  
+    
+        background-image: -webkit-linear-gradient(top,#0ff 0,rgba(255,255,255,0)1px);
+        background-image: -moz-linear-gradient(top,#0ff 0,rgba(255,255,255,0)1px);
+        background-image: -o-linear-gradient(top,#0ff 0,rgba(255,255,255,0)1px);
+        background-image: linear-gradient(to bottom,#0ff 0,rgba(255,255,255,0)1px);
+        background-repeat: repeat-y;
+        background-size: 100% 1.5em;
+        
+    //}
+} 
+
+/* MEDIA QUERIES */
+
+/* Medium devices (tablets, 48em and up) */
+@media screen and (min-width: $breakpoint-medium) { 
+
+}
+
+/* Large devices (desktops, 62em and up) */
+@media screen and (min-width: $breakpoint-large) { 
+    
+}
+
+/* Extra large devices (large desktops, 75em and up) */
+@media screen and (min-width: $breakpoint-extralarge) {  
+
+}
