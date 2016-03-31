@@ -71,7 +71,6 @@ body {
 @media screen and (min-width: 34em) {
   body {
     font-size: 87.5%;
-    background: rgba(255, 255, 0, 0.1);
   }
 }
 
@@ -79,7 +78,11 @@ body {
 @media screen and (min-width: 48em) {
   body {
     font-size: 87.5%;
-    background: rgba(0, 0, 255, 0.1);
+  }
+  .container {
+    padding: 0 4%;
+    margin: 1.5em 2%;
+    width: 88%;
   }
 }
 
@@ -87,26 +90,24 @@ body {
 @media screen and (min-width: 62em) {
   body {
     font-size: 100%;
-    background: rgba(0, 255, 0, 0.1);
   }
   .container {
     padding-top: 0;
     padding-bottom: 0;
-    padding-left: 3em;
-    padding-right: 3em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
     margin: 1.5em auto;
-    width: 53em;
+    width: 57em;
   }
 }
 
 /* Extra large devices (large desktops and up) */
-@media screen and (min-width: 70em) {
+@media screen and (min-width: 75em) {
   body {
     font-size: 112.5%;
-    background: rgba(255, 0, 0, 0.1);
   }
   .container {
-    width: 64em;
+    width: 60.625em;
   }
 }
 
@@ -140,18 +141,13 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   margin-top: 0;
-  padding-top: 1em;
+  padding-top: 0em;
   font-size: 3em;
   /* 48px / 16px = 3em */
   line-height: 1em;
   margin-bottom: .5em;
-}
-
-h1.baseline-shift {
-  margin-top: -1em;
   position: relative;
-  top: .5em;
-  margin-bottom: 1.5em;
+  top: .05em;
 }
 
 h1:first-child {
@@ -163,22 +159,10 @@ h2 {
   font-size: 2.25em;
   /* 36px / 16px = 2.25em */
   line-height: 1.333333333333334em;
-  margin-bottom: .5em;
+  margin-bottom: .666666666666667em;
   padding-top: .00666666666667em;
-  padding-bottom: .16em;
-  margin-top: 0;
-  padding-top: .16666666666667em;
-  font-size: 2.25em;
-  /* 36px / 16px = 2.25em */
-  line-height: 1.333333333333334em;
-  padding-bottom: 0.066666666666667em;
   position: relative;
-  top: .066666666666667em;
-}
-
-h1 + h2 {
-  padding-top: .00666666666667em;
-  padding-bottom: .16em;
+  top: .166666666666667em;
 }
 
 h3 {
@@ -213,6 +197,10 @@ h6 {
   margin-bottom: 1.5em;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+  max-width: 35em;
+}
+
 h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:last-child, p:last-child {
   margin-bottom: 0;
 }
@@ -243,6 +231,10 @@ a:focus {
 
 /* LISTS
 ================================================== */
+ul {
+  margin-bottom: 1.5em;
+}
+
 li {
   margin-left: 1.875em;
   /* 30px/16px = 1.875em */
@@ -250,6 +242,16 @@ li {
 
 ul ul, ul ol, ol ol, ol ul {
   margin-bottom: 0;
+}
+
+/* HORIZONTAL RULES
+================================================== */
+hr {
+  border: none;
+  margin-top: -.0625em;
+  padding-top: 1.5em;
+  border-bottom: 0.0625em solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 3em;
 }
 
 /* MEDIA QUERIES
@@ -269,7 +271,7 @@ ul ul, ul ol, ol ol, ol ul {
 }
 
 /* Extra large devices (large desktops, 75em and up) */
-@media screen and (min-width: 70em) {
+@media screen and (min-width: 75em) {
   body {
     font-size: 112.5%;
   }
@@ -289,14 +291,126 @@ img.scale-with-grid {
   display: table;
 }
 
+.textcentered {
+  text-align: center;
+}
+
+.tagline {
+  margin-top: -1.725em;
+  color: #666;
+  font-size: .875em;
+  position: relative;
+  top: .3em;
+}
+
 /* #Sections
 ================================================== */
 header h1 {
   padding-top: 0;
 }
 
+header p {
+  margin-top: -1.5em;
+  color: #666;
+}
+
 section {
   padding: 1.5em 0;
+}
+
+/* #SECTION HEADS */
+.section-head {
+  padding: 3em 0;
+}
+
+.section-head h1:before, .section-head h2:before, .section-head h3:before, .section-head h4:before, .section-head h5:before, .section-head h6:before {
+  content: "";
+  display: block;
+  margin: 0;
+  padding: 0;
+  height: .4em;
+  margin-bottom: .6em;
+  background: #c00;
+  width: 15%;
+  position: relative;
+  top: .05em;
+}
+
+.section-head p {
+  margin-top: -1.725em;
+  color: #666;
+  font-size: .875em;
+  position: relative;
+  top: .3em;
+}
+
+/* SIMPLE GRID */
+.row {
+  margin: 0;
+}
+
+.column {
+  display: block;
+  float: none;
+  margin: 0 0 3em 0;
+}
+
+.one-half.column,
+.one-third.column,
+.two-thirds.column,
+.one-fourth.column {
+  width: 100%;
+}
+
+.column.split {
+  float: left;
+  width: 48%;
+  margin: 0 1% 3em 0;
+}
+
+.column.centered {
+  width: 100%;
+  margin: 0 auto 3em 0;
+}
+
+.demo .column {
+  padding: 1.5em 0;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.demo .column p:last-child {
+  margin-bottom: 0;
+}
+
+/* Medium devices (tablets and up) */
+@media screen and (min-width: 48em) {
+  .column {
+    float: left;
+    margin-right: 8%;
+  }
+  .column.centered {
+    float: none;
+    margin: 0 auto 3em auto;
+  }
+  .column:last-child {
+    margin-right: 0;
+  }
+  .one-whole.column {
+    width: 100%;
+    margin: 0 0 3em 0;
+  }
+  .one-half.column {
+    width: 46%;
+  }
+  .one-third.column {
+    width: 28%;
+  }
+  .two-thirds.column {
+    width: 64%;
+  }
+  .one-fourth.column {
+    width: 19%;
+  }
 }
 
 .baselines-on {
@@ -306,7 +420,59 @@ section {
   background-size: 100% 1.5em;
 }
 
+.colorblocks-on h1, .colorblocks-on h2, .colorblocks-on h3, .colorblocks-on h4, .colorblocks-on h5, .colorblocks-on h6 {
+  background: rgba(0, 153, 255, 0.1);
+}
+
+.colorblocks-on p {
+  background: rgba(255, 153, 0, 0.1);
+}
+
+.colorblocks-on header {
+  background: rgba(0, 255, 0, 0.075);
+}
+
+.colorblocks-on .site-navigation {
+  background: rgba(0, 255, 0, 0.075);
+}
+
+.colorblocks-on .site-navigation ul {
+  background: rgba(51, 102, 153, 0.075);
+}
+
+.colorblocks-on .site-navigation ul li {
+  background: rgba(0, 0, 255, 0.075);
+}
+
+.colorblocks-on .site-navigation ul li a {
+  background: rgba(0, 255, 255, 0.075);
+}
+
 /* MEDIA QUERIES */
-/* Medium devices (tablets, 48em and up) */
-/* Large devices (desktops, 62em and up) */
-/* Extra large devices (large desktops, 75em and up) */
+/* Small devices (mobile and up) */
+@media screen and (min-width: 34em) {
+  body.mediaquerycolors-on {
+    background: rgba(255, 255, 0, 0.1);
+  }
+}
+
+/* Medium devices (tablets and up) */
+@media screen and (min-width: 48em) {
+  body.mediaquerycolors-on {
+    background: rgba(0, 0, 255, 0.1);
+  }
+}
+
+/* Large devices (desktops and up) */
+@media screen and (min-width: 62em) {
+  body.mediaquerycolors-on {
+    background: rgba(0, 255, 0, 0.1);
+  }
+}
+
+/* Extra large devices (large desktops and up) */
+@media screen and (min-width: 75em) {
+  body.mediaquerycolors-on {
+    background: rgba(255, 0, 0, 0.1);
+  }
+}

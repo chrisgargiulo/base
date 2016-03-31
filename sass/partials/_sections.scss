@@ -3,8 +3,54 @@
 
 header {
     h1 {padding-top: 0;}
+    
+    p { 
+        margin-top: -1.5em; 
+        color: $color-text-light;
+    }
 }
 
 section {
     padding: $base-line-height 0; 
 }  
+
+/* #SECTION HEADS */
+.section-head {
+    padding: 3em 0;
+    
+    h1,h2,h3,h4,h5,h6 {
+        
+        
+        &:before {
+            content: "";
+            display:block;
+            margin: 0;
+            padding: 0;
+            height: .4em;
+            margin-bottom: .6em;
+            background: $color-accent;
+            width: 15%;
+            position: relative;
+            top: .05em;
+        }
+        
+        
+        //display:inline-block;
+        //text-transform: uppercase;
+        //letter-spacing: .075em;
+        
+        //padding-top: 1em;
+        //padding-right: 1.5em;
+        
+        //padding-top: .5em;
+    }
+    
+    p { 
+        margin-top: -1.725em; 
+        color: $color-text-light;
+        font-size: .875em;
+        position: relative;
+        top: .3em;
+    }
+    
+}

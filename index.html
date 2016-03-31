@@ -20,21 +20,25 @@
     
 </head>
 
-<body class="baselines-on">
+<body class="baselines-on colorblocks-off mediaquerycolors-off">
+    
+
+    
 
 <div class="container">
     
-    <!--
     <header>
         <h1>Base</h1>
         <p>A Bare Bones, Start-from-Scratch, Base HTML, CSS, &amp; Javascript Setup</p>
         <nav>
             <ul>
-                <li><a href="#gettingstarted">Getting Started</a></li>
-                <li>Base HTML</li>
+                <!--<li><a href="#gettingstarted">Getting Started</a></li>-->
+                <li><a href="#typography">Typography</a></li>
+                <li><a href="#grid">Grid</a></li>
             </ul>
         </nav>
     </header>
+    <!--
    
     
     <section id="gettingstarted">
@@ -44,76 +48,153 @@
     </section>
     -->
     
+    <div id="typography" class="section-head">
+        <h3>Typography</h3>
+        <p>A simple hierarchy with vertical rhythm.</p>
+    </div>
     
-    <h1>h1. This is a heading 1 Lorem ipsum et dolorem</h1>
-    <h2>h2. This is a heading 2 Lorem ipsum et dolorem</h2>
-    <h3>h3. This is a heading 3 Lorem ipsum et dolorem</h3>
-    <h4>h4. This is a heading 4 Lorem ipsum et dolorem</h4>
-    <h5>h5. This is a heading 5 Lorem ipsum et dolorem</h5>
-    <h6>h6. This is a heading 6 Lorem ipsum et dolorem</h6>
+    
+    <h1>This is a heading 1</h1>
+    <h2>This is a heading 2</h2>
+    <h3>This is a heading 3</h3>
+    <h4>This is a heading 4</h4>
+    <h5>This is a heading 5</h5>
+    <h6>This is a heading 6</h6>
+
 
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat, lectus eu semper facilisis, purus augue egestas nisl, sit amet eleifend quam mi in augue. Curabitur tellus lorem, vulputate vitae sollicitudin vel, efficitur vel diam. Nullam pulvinar nulla sed dictum dignissim. In ornar posuere nulla, nec varius justo volutpat vitae. Nam vehicula erat vitae turpis malesuada, a fringilla neque accumsan. Vestibulum at mi felis. Nullam tristique, libero vel interdum ultrices, mauris turpis cursus nisi, ac posuere tellus orci in nisl. Duis mauris enim, consequat sit amet libero sit amet, euismod cursus neque. Integer dolor felis, commodo varius quam id, molestie lobortis tortor. Sed cursus felis ac viverra hendrerit. Praesent sodales est non lectus posuere egestas. Quisque consectetur dui a orci lacinia pretium. Donec fermentum, massa nec mollis hendrerit, lorem mi sagittis quam, a vestibulum quam arcu vitae augue.</p>
 
     <p>Nulla scelerisque odio eu nulla volutpat, in aliquet sem fringilla. Integer tortor arcu, ornare vitae justo ut, volutpat malesuada sapien. Nam dictum ac augue eget molestie. Aenean a pretium ex, ac cursus sapien. Cras commodo est nec tempus fermentum. Vestibulum tempus lacus sit amet massa semper, quis dapibus lorem scelerisque. Pellentesque facilisis dignissim arcu at ullamcorper. Vivamus sed pretium nisl. In sagittis orci justo, eget viverra felis lobortis vel. Quisque finibus eu metus in congue. Proin vulputate dictum elementum. Ut euismod pharetra enim, malesuada sodales ligula sollicitudin non. Cras tincidunt sit amet nibh id rutrum. Phasellus maximus commodo nulla sed viverra. Quisque non est ex.</p>
 
-    <h4>This is an unordered list:</h4>
+    <div class="row group">
+        <div class="one-half column">
+    
+            <h4>This is an unordered list:</h4>
 
-    <ul>
-        <li>List Item</li>
-        <li>List Item</li>
-        <li>List Item
             <ul>
                 <li>List Item</li>
                 <li>List Item</li>
+                <li>List Item
+                    <ul>
+                        <li>List Item</li>
+                        <li>List Item</li>
+                        <li>List Item</li>
+                    </ul>
+                </li>
                 <li>List Item</li>
-            </ul>
-        </li>
-        <li>List Item</li>
-        <li>List Item</li>
-        <li>List Item
+                <li>List Item</li>
+                <li>List Item
+                    <ol>
+                        <li>List Item</li>
+                        <li>List Item</li>
+                        <li>List Item</li>
+                    </ol>
+                </li>
+                <li>List Item</li>
+                <li>List Item</li>
+            </ul> 
+            
+        </div>
+        <div class="one-half column">
+
+            <h4>This is an ordered list:</h4>
+
             <ol>
                 <li>List Item</li>
                 <li>List Item</li>
-                <li>List Item</li>
-            </ol>
-        </li>
-        <li>List Item</li>
-        <li>List Item</li>
-    </ul> 
-
-    <h4>This is an ordered list:</h4>
-
-    <ol>
-        <li>List Item</li>
-        <li>List Item</li>
-        <li>List Item
-            <ul>
+                <li>List Item
+                    <ul>
+                        <li>List Item</li>
+                        <li>List Item</li>
+                        <li>List Item</li>
+                    </ul>
+                </li>
                 <li>List Item</li>
                 <li>List Item</li>
+                <li>List Item
+                    <ol>
+                        <li>List Item</li>
+                        <li>List Item</li>
+                        <li>List Item</li>
+                    </ol>
+                </li>
                 <li>List Item</li>
-            </ul>
-        </li>
-        <li>List Item</li>
-        <li>List Item</li>
-        <li>List Item
-            <ol>
                 <li>List Item</li>
-                <li>List Item</li>
-                <li>List Item</li>
-            </ol>
-        </li>
-        <li>List Item</li>
-        <li>List Item</li>
-    </ol>   
+            </ol>  
+            
+        </div>
+    </div> 
 
     <p>This is a <a href="http://www.google.com">link</a>.</p>
     <p>This is something <strong>bold</strong> (strong).</p>
     <p>This is something <em>italic</em> (em).</p>
+    <p>This is a horizontal rule (hr).</p>
+    <hr>
 
-    <p>This is an inline image (class="scale-with-grid"):</p>
-    <img src="http://placehold.it/1500x500" alt="placeholder image" class="scale-with-grid" />
-
-    </div><!-- END CONTAINER -->
+    <!--<p>This is an inline image (class="scale-with-grid"):</p>
+    <img src="http://placehold.it/1500x500" alt="placeholder image" class="scale-with-grid" />-->
+    
+    <div id="grid" class="section-head">
+        <h3>Grid</h3>
+        <p>A basic grid for layout.</p>
+    </div>
+    
+    <div class="textcentered demo">
+        
+		<div class="row group">
+			<div class="one-whole column">
+                <p>One Whole Column</p>
+			</div>
+		</div>
+        
+		<div class="row group">
+			<div class="one-half column">
+                <p>One-half Column</p>
+			</div>
+			<div class="one-half column">
+                <p>One-half Column</p>
+			</div>
+		</div>
+        
+		<div class="row group">
+			<div class="one-third column">
+                <p>One-third Column</p>
+			</div>
+			<div class="one-third column">
+                <p>One-third Column</p>
+			</div>
+			<div class="one-third column">
+                <p>One-third Column</p>
+			</div>
+		</div>
+        
+		<div class="row group">
+			<div class="one-third column">
+                <p>One-third Column</p>
+			</div>
+			<div class="two-thirds column">
+                <p>Two-thirds Column</p>
+			</div>
+		</div>
+        
+		<div class="row group">
+			<div class="one-fourth column">
+                <p>One-fourth Column</p>
+			</div>
+			<div class="one-fourth column">
+                <p>One-fourth Column</p>
+			</div>
+			<div class="one-fourth column">
+                <p>One-fourth Column</p>
+			</div>
+			<div class="one-fourth column">
+                <p>One-fourth Column</p>
+			</div>
+		</div>
+    
+    </div>
+    
+</div>
     
 </body>
 </html>

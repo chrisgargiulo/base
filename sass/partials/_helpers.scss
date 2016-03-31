@@ -4,3 +4,13 @@
     clear: both;
     display: table;
 }
+
+.textcentered { text-align: center; }
+
+.tagline  { 
+    margin-top: -1.725em; 
+    color: $color-text-light;
+    font-size: .875em;
+    position: relative;
+    top: .3em;
+}
