@@ -67,6 +67,14 @@ body {
 }
 
 /* MEDIA QUERIES */
+/* Small devices (mobile and up) */
+@media screen and (min-width: 34em) {
+  body {
+    font-size: 87.5%;
+    background: rgba(255, 255, 0, 0.1);
+  }
+}
+
 /* Medium devices (tablets and up) */
 @media screen and (min-width: 48em) {
   body {

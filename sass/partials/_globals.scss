@@ -14,6 +14,18 @@ body {
 
 /* MEDIA QUERIES */
 
+/* Small devices (mobile and up) */
+@media screen and (min-width: $breakpoint-small) { 
+
+    body {
+        font-size: $base-fontsize-medium;
+        background: rgba(255,255,0,.1);
+    }
+
+    .container {
+    }
+}
+
 /* Medium devices (tablets and up) */
 @media screen and (min-width: $breakpoint-medium) { 
 
