@@ -5,7 +5,7 @@
 
 //Variable Overrides
 
-body {
+body { 
     //background: #ccc; 
 }
 
@@ -27,19 +27,53 @@ body {
     //}
 } 
 
+.colorblocks-on {
+    
+    //.colored, .colored:nth-child(odd), .colored:last-of-type {background: none;}
+    h1, h2, h3, h4, h5, h6 {background: rgba(0,153,255,.1);}
+    p {background: rgba(255,153,0,.1);}
+    //.container {background: rgba(255,0,0,.075);}
+    
+    header { background: rgba(0,255,0,.075); }
+    .site-navigation { 
+        background: rgba(0,255,0,.075); 
+        ul { background: rgba(51,102,153,.075); }
+        ul li { background: rgba(0,0,255,.075); }
+        ul li a { background: rgba(0,255,255,.075); } 
+    }
+}  
+
 /* MEDIA QUERIES */
 
-/* Medium devices (tablets, 48em and up) */
+/* Small devices (mobile and up) */
+@media screen and (min-width: $breakpoint-small) { 
+
+    body.mediaquerycolors-on {
+        background: rgba(255,255,0,.1); //yellow
+    }
+}
+
+/* Medium devices (tablets and up) */
 @media screen and (min-width: $breakpoint-medium) { 
 
+    body.mediaquerycolors-on {
+        background: rgba(0,0,255,.1); //purple
+    }  
 }
 
-/* Large devices (desktops, 62em and up) */
+/* Large devices (desktops and up) */
 @media screen and (min-width: $breakpoint-large) { 
-    
+
+    body.mediaquerycolors-on {
+        background: rgba(0,255,0,.1); //green
+    }
 }
 
-/* Extra large devices (large desktops, 75em and up) */
-@media screen and (min-width: $breakpoint-extralarge) {  
+/* Extra large devices (large desktops and up) */
+@media screen and (min-width: $breakpoint-extralarge) {   
+
+    body.mediaquerycolors-on {
+        background: rgba(255,0,0,.1); //red
+    }
 
 }
