@@ -1,0 +1,63 @@
+/* SIMPLE GRID */
+
+.row {
+	margin: 0;
+}
+		
+.column {
+    display: block;
+    float: none;
+    margin: 0 0 (2 * $base-line-height) 0;
+}
+
+.one-half.column,
+.one-third.column,
+.two-thirds.column,
+.one-fourth.column {	width: 100%; }
+
+.column.split {	
+    float: left; 
+    width: 48%; 
+    margin: 0 1% (2 * $base-line-height) 0; 
+}
+
+.column.centered {
+    width: 100%;
+    margin: 0 auto (2 * $base-line-height) 0;
+}
+
+.demo .column  {
+    padding: $base-line-height 0;
+    background: rgba(0,0,0,.1);
+}
+.demo .column p:last-child {
+    margin-bottom: 0;
+}
+    
+
+
+/* Medium devices (tablets and up) */
+@media screen and (min-width: $breakpoint-medium) {
+
+    .column {
+        float: left;
+        margin-right: 8%;
+        //margin-bottom: $base-line-height;
+    }
+
+    .column.centered {
+        float: none;
+        margin: 0 auto (2 * $base-line-height) auto;
+    }
+
+    .column:last-child {
+        margin-right: 0;
+    }
+
+    .one-whole.column {	width: 100%; margin: 0 0 (2 * $base-line-height) 0; }
+    .one-half.column {	width: 46%; }
+    .one-third.column {	width: 28%; }
+    .two-thirds.column {	width: 64%; }
+    .one-fourth.column {	width: 19%; }
+    
+}

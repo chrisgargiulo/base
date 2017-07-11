@@ -29,6 +29,7 @@
 
 // MODULES
 @import "modules/variables";
+@import "modules/colors";
 
 
 // PARTIALS
@@ -42,14 +43,8 @@
 //BASE SITE
 @import "partials/sections";
 
-
-// Modules
-//@import "modules/colors";
-
-
-
 // Layout
-//@import "partials/grid";
+@import "partials/grid";
 
 
 
