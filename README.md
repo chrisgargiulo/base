@@ -1,7 +1,7 @@
 # [Base](http://chrisgargiulo.github.io/base/)
 
 ## A Simple HTML/CSS Base
-A Work-in-Progress Bare Bones, Start-from-Scratch, Base HTML, CSS, &amp; Javascript Setup
+A Work-in-Progress Bare Bones, Start-from-Scratch, Base HTML &amp; CSS Setup
 
 * * *
 
